@@ -24,7 +24,7 @@ function processar(escolha){
         resultado = "Perdeu!"
     }
 
-    document.getElementById('resultado').innerText = resultado
+    document.getElementById('resultado').innerText = `O resultado foi ${resultado}\nSua escolha foi ${escolha} e a do computador foi ${escolhaPC}`
 }
 
 // const pessoas = ["Caio","Maria Clara","Fulano",15,true
