@@ -39,3 +39,4 @@ rodarArray()
 function modificarpessoas(){
     return pessoas.map(usuario => usuario.toLowerCase())
 }
+console.log(modificarpessoas())
