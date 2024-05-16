@@ -31,6 +31,11 @@ const novopessoas = pessoas.map(usuario => usuario.toLowerCase())
 console.log(novopessoas)
 // outro jeito de escrever função
 const rodarArray = usuario => {
-
+    
 }
 rodarArray()
+
+
+function modificarpessoas(){
+    return pessoas.map(usuario => usuario.toLowerCase())
+}
