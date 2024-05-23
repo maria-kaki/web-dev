@@ -16,12 +16,18 @@ btnCriar.addEventListener('click',function (infosDoEvento){
         const btnEditar = document.createElement('button');
         btnEditar.innerText = "Editar";
         btnEditar.addEventListener('click', function (){
-            novofilme.style.color = "red";
-            novofilme.classList.add('fundo-preto')
+            novofilme.classList.toggle('fundo-preto')
         })
 
-        novofilme.append(btnEditar);
+        const imagem = document.createElement('img')
+        imagem.src=""
 
+        novofilme.innerHTML = `
+            <h1> ${inputUsuario.value} </h1>
+            <p>Avaliação do filme</p>
+        `
+
+        novofilme.append(btnEditar);
         listaFilmes.append(novofilme);
         inputUsuario.value = ""
     }
