@@ -1,11 +1,15 @@
-export default function Card({titulo,nivel,tempoxp}){
+export default function Card({ dados }){
     return(
         <>
-            <div className="skill-card">
-                    <h3>{titulo}</h3>
-                    <p>Nível: {nivel}</p>
-                    <p>Tempo XP: {tempoxp}</p>
+        {
+            dados.map(skill => (
+            <div className="skill-card" style={{color: skill.color}}>
+                <h3>{skill.titulo}</h3>
+                <p>Nível: {skill.nivel}</p>
+                <p>Tempo XP: {skill.tempoxp}</p>
             </div>
+            ))
+        }
         </>
     )
 }

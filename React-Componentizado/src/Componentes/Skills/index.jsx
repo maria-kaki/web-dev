@@ -1,21 +1,33 @@
 import Card from "../Card";
 
 function Skills({ skills }) {
+
+  // dicionário = tipo um banco de dados
+  const habilidades = [
+    {
+      titulo: "HTML",
+      nivel: "Avançado",
+      tempoxp: "10 anos",
+      color: "blue",
+    },
+    {
+      titulo: "CSS",
+      nivel: "Básico",
+      tempoxp: "1 ano",
+      color: "red",
+    },
+    {
+      titulo: "React",
+      nivel: "lutando",
+      tempoxp: "1 mês",
+      color: "green",
+    }
+  ]
+
   return (
     <div className="skills">
       <h2>Habilidades</h2>
-                <Card 
-                  titulo = {"React"} 
-                  nivel = {"Lutando"}
-                  tempoxp = {"2 meses"}/>
-                <Card 
-                  titulo = {"CSS Grid" }
-                  nivel={"Intermediário"}
-                  tempoxp={"3 meses"}/>
-                <Card 
-                  titulo = {"React"} 
-                  nivel={"Lutando"}
-                  tempoxp={"4 meses"}/>
+      <Card dados = {habilidades}/>
     </div>
   );
 }
