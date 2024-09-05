@@ -11,7 +11,9 @@ const estiloTitulo = {
       <Header/>
       <h1 className="titulo"
       style={estiloTitulo}
-      >Titulo da pagina</h1>
+      > Titulo da pagina</h1>
+
+      <p className="text-5xl md:text-purple-500 w-[350px] text-fiapPrimary bg-gray-800 ml-8 flex justify-center">Parágrafo</p>
     </>
   )
 }
