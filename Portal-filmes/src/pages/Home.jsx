@@ -1,5 +1,11 @@
+import CardContainer from "../components/CardContainer";
+
 export default function Home(){
     return(
-        <h1> Home Page</h1>
+        <>
+            <CardContainer>
+                <h1>Lista de Filmes</h1>
+            </CardContainer>
+        </>
     )
 }

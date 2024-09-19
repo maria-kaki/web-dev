@@ -17,9 +17,9 @@ const router = createBrowserRouter([
     children: [
       {index: true,element: <Home/>},
       {path:'/filmes', element: <MovieListPage/>},
-      {path:'/filmes/detalhes-filme', element: <MovieDetailPage/>},
+      {path:'/filmes/:DetalhesFilme', element: <MovieDetailPage/>},
       {path:'/generos', element: <GenreListPage/>},
-      {path:'/generos/lista-por-genero', element: <MoviesByGenrePage/>},
+      {path:'/generos/:ListaPorGenero', element: <MoviesByGenrePage/>},
       {path:'*', element: <PageNotFound/>}
     ]
   }
