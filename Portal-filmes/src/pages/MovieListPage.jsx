@@ -17,12 +17,17 @@ export default function MovieListPage(){
         <>
             <h1>Veja o catálogo completo de filmes</h1>
             <input type="text" id="search" className="text-black" value={search} onChange={handleSearch}/>
-            {
-                filmesFiltrados
-                .map(filme => (
-                    <MovieCard key={filme.id} {...filme} />
-                ))
-            }
+            <section className="flex">
+                {
+                    filmesFiltrados.length > 0 ?
+                    filmesFiltrados
+                    .map(filme => (
+                        <MovieCard key={filme.id} {...filme} />
+                    ))
+                    :
+                    <p>Filme não encontrado</p>
+                }
+            </section>
         </>
     )
 }
